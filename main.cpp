@@ -7,6 +7,7 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	int Reset = 0;
+	Data Question[100];
 	do
 	{
 		
@@ -43,8 +44,8 @@ int main()
 			int  Mode = OperatingMode(); // Выбор режима работы
 			switch (Mode)
 			{
-			case 1: {FirstMode(QuanityOfTasks, QuanityOfSteps, QuanityOfRequiredPoints, QuanityOfBannedPoints); break; } // Режим 1: "Запись задачи в файл"
-			case 2: {SecondMode(QuanityOfTasks, QuanityOfSteps, QuanityOfRequiredPoints, QuanityOfBannedPoints); break; } // Режим 2: "Вопрос-ответ"
+			case 1: {FirstMode(QuanityOfTasks, QuanityOfSteps, QuanityOfRequiredPoints, QuanityOfBannedPoints, Question); break; } // Режим 1: "Запись задачи в файл"
+			case 2: {SecondMode(QuanityOfTasks, QuanityOfSteps, QuanityOfRequiredPoints, QuanityOfBannedPoints, Question); break; } // Режим 2: "Вопрос-ответ"
 			default: break;
 			}
 			cout << " ==============================================================" << endl;
