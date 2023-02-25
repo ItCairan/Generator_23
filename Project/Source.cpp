@@ -448,7 +448,7 @@ void Generation(const int &i,const int &QuanityOfSteps, const int &QuanityOfRequ
 	{
 		Question[i].InitialNumber = rand() % 100 + 1;
 		Question[i].FiniteNumber = rand() % 100 + 1;
-	} while ((Question[i].FiniteNumber <= Question[i].InitialNumber) or (Question[i].FiniteNumber - Question[i].InitialNumber < 7) or (Question[i].FiniteNumber - Question[i].InitialNumber > 40));
+	} while ((Question[i].FiniteNumber <= Question[i].InitialNumber) or (Question[i].FiniteNumber - Question[i].InitialNumber < 7) or (Question[i].FiniteNumber - Question[i].InitialNumber > 60));
 	
 	for (int j = 0; j < QuanityOfSteps; j++)
 	{
